@@ -1,0 +1,138 @@
+
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>PREMIUM HOME — КОТИК ВЕРТОЛЁТИК</title>
+<style>
+*{box-sizing:border-box}
+body{
+ margin:0;color:#fff;font-family:Arial,sans-serif;
+ background:radial-gradient(ellipse at 50% 0%,#382078 0%,#11102c 45%,#050611 100%);
+ min-height:100vh;overflow-x:hidden
+}
+body:before{
+ content:"";position:fixed;inset:0;pointer-events:none;
+ background-image:radial-gradient(2px 2px at 15% 20%,#fff,transparent),
+ radial-gradient(2px 2px at 75% 30%,#b9a5ff,transparent),
+ radial-gradient(2px 2px at 40% 75%,#fff,transparent),
+ radial-gradient(2px 2px at 90% 85%,#b9a5ff,transparent);
+ background-size:230px 190px;opacity:.65
+}
+header{padding:28px 7%;display:flex;justify-content:space-between;align-items:center}
+.logo{font-size:22px;font-weight:900;letter-spacing:3px}
+.logo span{color:#b69aff}
+nav a{color:#ddd;text-decoration:none;margin-left:24px;font-size:14px}
+.hero{text-align:center;padding:95px 20px 80px;position:relative}
+.orbit{
+ width:145px;height:145px;border:2px solid #a98aff;
+ border-radius:50%;margin:0 auto 35px;display:grid;place-items:center;
+ box-shadow:0 0 35px #8755ff,inset 0 0 30px #8755ff55;
+ font-size:58px;animation:glow 4s infinite alternate
+}
+@keyframes glow{to{transform:rotate(12deg) scale(1.06);box-shadow:0 0 65px #a98aff}}
+h1{font-size:clamp(38px,7vw,76px);margin:0;letter-spacing:5px}
+h1 span{color:#b69aff}
+.subtitle{font-size:20px;color:#d4c9f8;margin:20px 0}
+.description{max-width:650px;margin:0 auto;color:#bbb5d5;line-height:1.8}
+.buttons{display:flex;gap:16px;justify-content:center;flex-wrap:wrap;margin-top:35px}
+.btn{
+ display:inline-block;padding:17px 27px;border-radius:13px;
+ background:linear-gradient(120deg,#8655ef,#bd75ff);
+ color:white;text-decoration:none;font-weight:bold;
+ box-shadow:0 8px 30px #854bdf55;transition:.2s
+}
+.btn:hover{transform:translateY(-4px);filter:brightness(1.15)}
+.btn.secondary{background:#ffffff12;border:1px solid #a98aff}
+section{max-width:1050px;margin:0 auto;padding:55px 22px;position:relative}
+h2{text-align:center;font-size:32px;margin-bottom:35px}
+.cards{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:18px}
+.card{
+ background:#ffffff0c;border:1px solid #a98aff44;border-radius:18px;
+ padding:25px;backdrop-filter:blur(12px)
+}
+.card .emoji{font-size:34px}
+.card h3{margin:14px 0 8px}
+.card p{color:#bdb6d4;line-height:1.6;font-size:14px}
+.download{text-align:center;background:#ffffff0a;border:1px solid #a98aff55;border-radius:24px;padding:38px 20px}
+.download p{color:#c5bddb;line-height:1.7}
+.steps{max-width:750px;margin:auto}
+.step{padding:18px 22px;margin:13px 0;background:#ffffff0c;border-left:3px solid #a98aff;border-radius:10px;color:#d5cdea;line-height:1.7}
+.step strong{color:#fff}
+footer{text-align:center;padding:35px;color:#9188ae;font-size:13px}
+@media(max-width:600px){nav{display:none}.hero{padding-top:65px}}
+</style>
+</head>
+<body>
+<header>
+ <div class="logo">✦ PREMIUM <span>HOME</span></div>
+ <nav><a href="#features">Возможности</a><a href="#download">Скачать</a><a href="#install">Установка</a></nav>
+</header>
+
+<main>
+<div class="hero">
+ <div class="orbit">🐱</div>
+ <h1>PREMIUM <span>HOME</span></h1>
+ <div class="subtitle">КОТИК ВЕРТОЛЁТИК 🚀</div>
+ <p class="description">
+ Новый стиль домашнего экрана для LG Smart TV.
+ Космический дизайн, красивые эффекты, фотографии,
+ часы и быстрый доступ к приложениям.
+ </p>
+ <div class="buttons">
+  <a class="btn" href="https://github.com/sask8859-afk/premium-home/releases/latest/download/com.personal.photogallery_1.1.0_all.ipk">⬇ Скачать PREMIUM HOME</a>
+  <a class="btn secondary" href="https://github.com/sask8859-afk/premium-home/releases/latest/download/PremiumHome_1.1.0.zip">📦 Скачать ZIP с инструкцией</a>
+ </div>
+</div>
+
+<section id="features">
+ <h2>✨ Возможности</h2>
+ <div class="cards">
+  <div class="card"><div class="emoji">🌌</div><h3>Galaxy Edition</h3><p>Космический фон, сияние и премиальный внешний вид.</p></div>
+  <div class="card"><div class="emoji">🕒</div><h3>Часы и дата</h3><p>Время и дата прямо на домашнем экране.</p></div>
+  <div class="card"><div class="emoji">🎵</div><h3>Кино-заставка</h3><p>Атмосферное интро с эффектами и звуком.</p></div>
+  <div class="card"><div class="emoji">📸</div><h3>Мои фотографии</h3><p>Персональная фотогалерея и слайд-шоу.</p></div>
+  <div class="card"><div class="emoji">📺</div><h3>YouTube</h3><p>Быстрый запуск YouTube с домашнего экрана.</p></div>
+  <div class="card"><div class="emoji">🎮</div><h3>Premium Store</h3><p>Собственный каталог и меню приложений.</p></div>
+ </div>
+</section>
+
+<section id="download">
+ <div class="download">
+  <h2>⬇ Скачать Premium Home</h2>
+  <p>Версия 1.1.0 · Установочный пакет webOS · Бесплатно</p>
+  <div class="buttons">
+   <a class="btn" href="https://github.com/sask8859-afk/premium-home/releases/latest/download/com.personal.photogallery_1.1.0_all.ipk">Скачать IPK</a>
+   <a class="btn secondary" href="https://github.com/sask8859-afk/premium-home/releases/latest/download/PremiumHome_1.1.0.zip">Скачать ZIP + инструкцию</a>
+  </div>
+  <p>Если загрузка не начинается, открой страницу релиза GitHub.</p>
+  <a href="https://github.com/sask8859-afk/premium-home/releases/tag/v1.1.0" style="color:#c6aaff">Страница релиза →</a>
+ </div>
+</section>
+
+<section id="install">
+ <h2>📖 Как установить</h2>
+ <div class="steps">
+  <div class="step"><strong>1. Подготовь телевизор.</strong><br>Включи Developer Mode и Key Server в приложении Developer Mode на LG TV.</div>
+  <div class="step"><strong>2. Подготовь компьютер.</strong><br>Установи Node.js и webOS CLI. Подключи телевизор и компьютер к одной сети.</div>
+  <div class="step"><strong>3. Настрой подключение.</strong><br>Добавь телевизор в webOS CLI и настрой ключ подключения.</div>
+  <div class="step"><strong>4. Установи приложение.</strong><br>В PowerShell выполни команду:<br><code>ares-install.cmd --device LGTV .\com.personal.photogallery_1.1.0_all.ipk</code></div>
+  <div class="step"><strong>5. Запусти приложение.</strong><br><code>ares-launch.cmd --device LGTV com.personal.photogallery</code></div>
+ </div>
+</section>
+
+<section>
+ <div class="download">
+  <h2>📺 Совместимость</h2>
+  <p>Проверено на LG 32LM577BPLA с webOS.<br>
+  Работа на других моделях и версиях webOS может отличаться.</p>
+ </div>
+</section>
+</main>
+<footer>
+ PREMIUM HOME · КОТИК ВЕРТОЛЁТИК 🐱<br>
+ © 2026 · Независимый проект для LG webOS
+</footer>
+</body>
+</html>
